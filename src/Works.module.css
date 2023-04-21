@@ -1,0 +1,45 @@
+.main {
+    font-style: normal;
+    right: 0;
+    top: 0;
+    /*width: auto;*/
+    /*height: auto;*/
+    position: relative;
+    text-align: right;
+}
+
+.h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -0.015em;
+    text-transform: capitalize;
+    color: #2D2D2D;
+    margin-bottom: 10px;
+}
+
+.textMain {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.0015em;
+    color: #6A6A6A;
+    margin-bottom: 20px;
+}
+
+.body {
+    background-color: aquamarine;
+}
+
+.dots{
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

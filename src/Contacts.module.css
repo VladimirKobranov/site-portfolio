@@ -1,0 +1,81 @@
+.main {
+    /*font-family: "Roboto", sans-serif;*/
+    font-style: normal;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    position: relative;
+    text-align: right;
+}
+
+.h1 {
+    animation: fadeIn 1s;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -0.015em;
+    text-transform: capitalize;
+    color: #2D2D2D;
+    margin-bottom: 10px;
+}
+
+.h2 {
+    animation: fadeIn 2s;
+    position: relative;
+    /*width: 441px;*/
+    height: 38px;
+    /*top: 159px;*/
+    right: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: right;
+    letter-spacing: -0.015em;
+    text-transform: lowercase;
+    color: #6A6A6A;
+
+}
+
+.textMain {
+    animation: fadeIn 3s;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.0015em;
+    color: #6A6A6A;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-align-last: right;
+}
+.inputNameMail{
+    position: relative;
+    left: 0;
+    /*top: 217px;*/
+}
+
+.button{
+    animation: fadeIn 4s;
+    position: relative;
+    width: auto;
+    height: 38px;
+    right: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    color: #6A6A6A;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

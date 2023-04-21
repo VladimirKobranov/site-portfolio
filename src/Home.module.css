@@ -1,0 +1,80 @@
+.main {
+    /*font-family: "Roboto", sans-serif;*/
+    font-style: normal;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    position: relative;
+    text-align: right;
+}
+
+.h1 {
+    animation: fadeIn 1s;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -0.015em;
+    text-transform: capitalize;
+    color: #2D2D2D;
+    margin-bottom: 10px;
+}
+
+.h2 {
+    animation: fadeIn 2s;
+    /*animation: fadeInRight 1s ease-in-out;*/
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
+    letter-spacing: -0.015em;
+    color: #2D2D2D;
+    margin-bottom: 10px;
+}
+
+.textMain {
+    animation: fadeIn 3s;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.0015em;
+    color: #6A6A6A;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-align-last: right;
+}
+
+.textSub {
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    width: 440px;
+    left: 417px;
+    letter-spacing: 0.0015em;
+    margin-bottom: 20px;
+    color: #6A6A6A;
+    text-align: justify;
+    text-align-last: right;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0); /* ADDED - start x position as -50px */
+        cursor: pointer;
+        transition: 0.25s all ease-in-out;
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}

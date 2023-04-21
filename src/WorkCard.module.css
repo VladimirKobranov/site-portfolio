@@ -1,0 +1,85 @@
+.info {
+    color: #2D2D2D;
+}
+
+.h1 {
+    animation: fadeIn 1s;
+    position: relative;
+    width: auto;
+    right: 0;
+    top: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: right;
+    letter-spacing: -0.015em;
+    text-transform: capitalize;
+    color: #2D2D2D;
+}
+
+.h2 {
+    animation: fadeIn 1s;
+    position: relative;
+    width: auto;
+    height: 38px;
+    right: 0;
+    top: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: right;
+    letter-spacing: -0.015em;
+    color: #2D2D2D;
+}
+
+.textMain {
+    animation: fadeIn 1s;
+    position: relative;
+    width: auto;
+    height: auto;
+    left: 0;
+    top: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: justify;
+    text-align-last: right;
+    letter-spacing: 0.0015em;
+    color: #6A6A6A;
+}
+
+.textTags {
+    animation: fadeIn 1s;
+    position: relative;
+    width: 433px;
+    height: auto;
+    right: 0;
+    top: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: justify;
+    text-align-last: right;
+    letter-spacing: 0.015em;
+    color: #9B9B9B;
+}
+
+.image {
+    animation: fadeIn 2s;
+    width: auto;
+    height: auto;
+    object-fit: fill;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

@@ -1,10 +1,11 @@
 import React from "react";
 import {Link, Text} from "@chakra-ui/react";
 import styles from "./MyLink.module.css";
+import {isBrowser} from "react-device-detect";
 
 function MyLink(props) {
     return (
-        <Link href={props.link} isExternal className={styles.link}>
+        <Link href={props.link} isExternal className={isBrowser? styles.link : styles.linkMobile}>
             <Text
                 position='relative'
                 top='0'

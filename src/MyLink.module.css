@@ -1,6 +1,9 @@
 .link{
     animation: fadeIn 1s;
 }
+.linkMobile{
+
+}
 
 @keyframes fadeIn {
     from{

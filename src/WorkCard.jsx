@@ -39,7 +39,6 @@ function WorkCard(props) {
             </BrowserView>
             <MobileView>
                 <VStack>
-
                     <Box h='auto' w='100%'>
                         <Text className={styles.h1Mobile} mb='20px'>
                             {props.name}
@@ -63,7 +62,7 @@ function WorkCard(props) {
                             <Img
                                 src={require('./works/images/' + props.imageName)}
                                 alt={props.name}
-                                className={styles.image}/>
+                                className={styles.imageMobile}/>
                         </Box>
                     </Box>
                 </VStack>

@@ -19,7 +19,7 @@
 }
 
 .h1Mobile {
-    animation: fadeIn 1s;
+    /*animation: fadeIn 1s;*/
     font-weight: 700;
     font-size: 28px;
     line-height: 28px;
@@ -46,7 +46,7 @@
 }
 
 .h2Mobile {
-    animation: fadeIn 2s;
+    /*animation: fadeIn 2s;*/
     /*animation: fadeInRight 1s ease-in-out;*/
     font-weight: 700;
     font-size: 28px;
@@ -57,7 +57,7 @@
 }
 
 .textMain {
-    animation: fadeIn 1s;
+    /*animation: fadeIn 1s;*/
     position: relative;
     width: auto;
     height: auto;
@@ -73,7 +73,7 @@
     color: #6A6A6A;
 }
 .textMainMobile {
-    animation: fadeIn 3s;
+    /*animation: fadeIn 3s;*/
     font-weight: 400;
     font-size: 15px;
     line-height: 17px;
@@ -84,7 +84,7 @@
     text-align-last: right;
 }
 .textTags {
-    animation: fadeIn 1s;
+    /*animation: fadeIn 1s;*/
     position: relative;
     width: 433px;
     height: auto;
@@ -101,7 +101,7 @@
 }
 
 .textTagsMobile {
-    animation: fadeIn 1s;
+    /*animation: fadeIn 1s;*/
     position: relative;
     height: auto;
     right: 0;
@@ -123,7 +123,12 @@
     height: auto;
     object-fit: fill;
 }
-
+.imageMobile {
+    /*animation: fadeIn 2s;*/
+    width: auto;
+    height: auto;
+    object-fit: fill;
+}
 @keyframes fadeIn {
     from {
         opacity: 0;

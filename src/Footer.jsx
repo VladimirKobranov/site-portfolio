@@ -2,6 +2,7 @@ import React from "react";
 import {Box, Center, Container, Flex, Text, VStack} from "@chakra-ui/react";
 import MyButtonIcon from "./MyButtonIcon";
 import {mdiArtstation, mdiFacebook, mdiGithub, mdiLinkedin} from '@mdi/js';
+import {isBrowser} from "react-device-detect";
 
 const d = new Date();
 let year = d.getFullYear();
@@ -14,10 +15,11 @@ function Footer() {
                 <VStack position='relative' top='44px'>
                     <Container w='auto' fontStyle='normal'
                                fontWeight='300'
-                               fontSize='20px'
-                               lineHeight='23px'
+                               fontSize={isBrowser ? '20px' : '15px'}
+                               lineHeight={isBrowser ? '23px' : '18px'}
                                textAlign='center'
-                               letterSpacing='0.0015em' color='#D3D3D3'>
+                               letterSpacing='0.0015em'
+                               color='#D3D3D3'>
                         <Text textAlign='center'>
                             .vk {year} | All rights reserved
                         </Text>

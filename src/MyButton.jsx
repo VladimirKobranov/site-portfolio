@@ -1,5 +1,6 @@
 import React from "react";
 import {Button} from "@chakra-ui/react";
+import {isBrowser} from "react-device-detect";
 
 function MyButton(props) {
 
@@ -7,7 +8,7 @@ function MyButton(props) {
         <Button
             fontStyle='normal'
             fontWeight='300'
-            fontSize='24px'
+            fontSize={isBrowser ? '24px' : '20px'}
             lineHeight='28px'
             textAlign='center'
             letterSpacing='-0.015em'

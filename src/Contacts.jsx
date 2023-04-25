@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styles from './Contacts.module.css'
 import {Box, Button, HStack, Input, Text, Textarea, useToast} from "@chakra-ui/react";
 import {send} from 'emailjs-com';
+import {isBrowser} from "react-device-detect";
 
 function Contacts() {
     const [name, setName] = useState('');
@@ -56,28 +57,34 @@ function Contacts() {
     }
 
     return (
-        <Box className={styles.main}>
-            <Text className={styles.h1}>
+        <Box className={styles.main} h={isBrowser ? '91vh' : '91vh'}>
+            <Text className={isBrowser ? styles.h1 : styles.h1Mobile}>
                 Contacts
             </Text>
-            <Text className={styles.textMain}>
+            <Text className={isBrowser ? styles.textMain : styles.textMainMobile}>
                 I'm interested in talking with enthusiastic individuals who want to improve the user experience and
                 interface design of their product. To initiate the conversation, kindly complete the form provided below
                 and share some details about your project. I'll respond to you promptly.
             </Text>
             <Box>
-                <HStack className={styles.h2} mb='20px'>
-                    <Text width='441px'>
+                <HStack className={isBrowser ? styles.h2 : styles.h2Mobile} mb='20px'>
+                    <Text
+                        width={isBrowser ? '441px' : '50%'}
+                    >
                         name
                     </Text>
-                    <Text width='441px'>
+                    <Text
+                        width={isBrowser ? '441px' : '50%'}
+                    >
                         email
                     </Text>
                 </HStack>
                 <HStack className={styles.inputNameMail} mb='20px'>
                     <Input variant='filled'
                            placeholder='name' value={name}
-                           size='md' width='441px' borderRadius='2px'
+                           size='md'
+                           width={isBrowser ? '441px' : '50%'}
+                           borderRadius='2px'
                            textAlign='right' bg='#F5F5F5' color='#6A6A6A'
                            _placeholder={{opacity: 1.0, color: 'white'}}
                            focusBorderColor='#F5F5F5'
@@ -87,7 +94,9 @@ function Contacts() {
                     />
                     <Input variant='filled'
                            placeholder='email' value={email}
-                           size='md' width='441px' borderRadius='2px'
+                           size='md'
+                           width={isBrowser ? '441px' : '50%'}
+                           borderRadius='2px'
                            textAlign='right' bg='#F5F5F5' color='#6A6A6A'
                            _placeholder={{opacity: 1.0, color: 'white'}}
                            focusBorderColor='#F5F5F5'
@@ -101,8 +110,12 @@ function Contacts() {
                 </Text>
                 <Textarea
                     placeholder='tell me about your concerns'
-                    value={message} size='md' width='866px' height='200px' borderRadius='2px'
-                    textAlign='right' mb='20px' bg='#F5F5F5' color='#6A6A6A'
+                    value={message} size='md'
+                    width={isBrowser ? '866px' : '100%'}
+                    height='200px' borderRadius='2px'
+                    textAlign='right'
+                    mb='20px'
+                    bg='#F5F5F5' color='#6A6A6A'
                     _placeholder={{opacity: 1.0, color: 'white'}}
                     resize='none'
                     focusBorderColor='#F5F5F5'
@@ -110,7 +123,8 @@ function Contacts() {
                     onChange={event => setMessage(event.target.value)}
                 />
                 <Button className={styles.button}
-                        colorScheme='teal' variant='ghost' color='#6A6A6A' fontWeight='400' fontSize='28px'
+                        colorScheme='teal' variant='ghost' color='#6A6A6A' fontWeight='400'
+                        fontSize={isBrowser ? '28px' : '25px'}
                         bgColor='white'
                         _active={{fontWeight: '700', color: '#2D2D2D'}}
                         _hover={{fontWeight: '700', color: '#2D2D2D'}}

@@ -20,6 +20,17 @@
     margin-bottom: 10px;
 }
 
+.h1Mobile {
+    animation: fadeIn 1s;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -0.015em;
+    text-transform: capitalize;
+    color: #2D2D2D;
+    margin-bottom: 10px;
+}
+
 .h2 {
     animation: fadeIn 2s;
     position: relative;
@@ -35,7 +46,17 @@
     letter-spacing: -0.015em;
     text-transform: lowercase;
     color: #6A6A6A;
+}
 
+.h2Mobile {
+    animation: fadeIn 2s;
+    /*animation: fadeInRight 1s ease-in-out;*/
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: -0.015em;
+    color: #2D2D2D;
+    margin-bottom: 10px;
 }
 
 .textMain {
@@ -49,13 +70,26 @@
     text-align: justify;
     text-align-last: right;
 }
-.inputNameMail{
+
+.textMainMobile {
+    animation: fadeIn 3s;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.0015em;
+    color: #6A6A6A;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-align-last: right;
+}
+
+.inputNameMail {
     position: relative;
     left: 0;
     /*top: 217px;*/
 }
 
-.button{
+.button {
     animation: fadeIn 4s;
     position: relative;
     width: auto;
@@ -72,10 +106,10 @@
 }
 
 @keyframes fadeIn {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+    to {
         opacity: 1;
     }
 }

@@ -18,6 +18,17 @@
     color: #2D2D2D;
 }
 
+.h1Mobile {
+    animation: fadeIn 1s;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: -0.015em;
+    text-transform: capitalize;
+    color: #2D2D2D;
+    margin-bottom: 10px;
+}
+
 .h2 {
     animation: fadeIn 1s;
     position: relative;
@@ -32,6 +43,17 @@
     text-align: right;
     letter-spacing: -0.015em;
     color: #2D2D2D;
+}
+
+.h2Mobile {
+    animation: fadeIn 2s;
+    /*animation: fadeInRight 1s ease-in-out;*/
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: -0.015em;
+    color: #2D2D2D;
+    margin-bottom: 10px;
 }
 
 .textMain {
@@ -50,7 +72,17 @@
     letter-spacing: 0.0015em;
     color: #6A6A6A;
 }
-
+.textMainMobile {
+    animation: fadeIn 3s;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.0015em;
+    color: #6A6A6A;
+    margin-bottom: 10px;
+    text-align: justify;
+    text-align-last: right;
+}
 .textTags {
     animation: fadeIn 1s;
     position: relative;
@@ -68,6 +100,23 @@
     color: #9B9B9B;
 }
 
+.textTagsMobile {
+    animation: fadeIn 1s;
+    position: relative;
+    height: auto;
+    right: 0;
+    top: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: justify;
+    text-align-last: right;
+    letter-spacing: 0.015em;
+    color: #9B9B9B;
+}
+
+
 .image {
     animation: fadeIn 2s;
     width: auto;
@@ -76,10 +125,10 @@
 }
 
 @keyframes fadeIn {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+    to {
         opacity: 1;
     }
 }

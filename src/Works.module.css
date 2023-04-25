@@ -17,6 +17,16 @@
     color: #2D2D2D;
     margin-bottom: 10px;
 }
+.h1Mobile {
+    animation: fadeIn 1s;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -0.015em;
+    text-transform: capitalize;
+    color: #2D2D2D;
+    margin-bottom: 10px;
+}
 
 .textMain {
     font-weight: 400;

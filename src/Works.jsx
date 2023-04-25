@@ -6,11 +6,10 @@ import dataWorks from "./works/dataWorks";
 import {BrowserView, isBrowser} from "react-device-detect";
 import Icon from "@mdi/react";
 import {mdiChevronDown, mdiChevronUp, mdiCircle} from "@mdi/js";
+import {useSwipeable} from "react-swipeable";
 
 function Works() {
     const [worksIndex, setWorksIndex] = useState(0);
-    const [startX, setStartX] = useState(null);
-    const [endX, setEndX] = useState(null);
 
     function handleUpClick() {
         setWorksIndex((prevIndex) => {
@@ -47,31 +46,18 @@ function Works() {
         }
     }
 
-    function handleTouchStart(event) {
-        setStartX(event.touches[0].clientX);
-    }
+    const handlers = useSwipeable({
+        onSwipedRight: () => handleUpClick(),
+        onSwipedLeft: () => handleDownClick(),
+        swipeDuration: 500,
+        preventScrollOnSwipe: true,
+        trackMouse: true
+    });
 
-    function handleTouchMove(event) {
-        setEndX(event.touches[0].clientX);
-    }
-
-    function handleTouchEnd() {
-        if (endX > startX) {
-            handleUpClick();
-        } else if (endX < startX) {
-            handleDownClick();
-        }
-        setStartX(null);
-        setEndX(null);
-    }
 
     return (
         <Box
-            className={styles.main}
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
-        >
+            className={styles.main} {...handlers}>
             <Text
                 className={isBrowser ? styles.h1 : styles.h1Mobile}
                 width={isBrowser ? "866px" : "100%"}
